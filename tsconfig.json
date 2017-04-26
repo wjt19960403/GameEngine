@@ -1,13 +1,17 @@
 {
 	"compilerOptions": {
-		"target": "es5",
-		"module": "commonjs",
-		"watch": true,
-		"sourceMap": true,
-		"outDir": "./out"
+		"target": "es6",
+		"out": "./out/cadence.js",
+		"declaration": true,
+		"alwaysStrict": true,
+		"experimentalDecorators":true
 	},
-	"exclude": [
-		"node_modules",
-		"out"
+	"files": [
+		"src/core/math.ts",
+		"src/core/res.ts",
+		"src/core/ticker.ts",
+		"src/core/touchEvent.ts",
+		"src/core/displaylist.ts",
+		"src/platforms/browser/driver.ts"
 	]
 }
